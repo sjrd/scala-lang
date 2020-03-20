@@ -261,10 +261,10 @@ $(document).ready(function() {
     if ($(".main-download").length) {
         var os = getOS();
         var intelliJlink = $("#intellij-" + os).text();
-        var sbtLink = $("#sbt-" + os).text();
+        var vsCodeLink = $("#vscode-" + os).text();
         var stepOneContent = $("#stepOne-" + os).html()
         $("#download-intellij-link").attr("href", intelliJlink);
-        $("#download-sbt-link").attr("href", sbtLink);
+        $("#download-vscode-link").attr("href", vsCodeLink);
         $("#download-step-one").html(stepOneContent);
     }
 });

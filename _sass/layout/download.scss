@@ -113,7 +113,7 @@
                 margin-top: 38px;
 
                 .download-intellij,
-                .download-sbt {
+                .download-vscode {
                     position: relative;
                     @include span-columns(4 of 8);
                     @include bp(large) {
@@ -130,7 +130,7 @@
                         padding: 16px 0;
                         border-radius: 100px;
                         font-weight: $font-bold;
-                        margin-bottom: 34px;
+                        margin-bottom: 20px;
 
                         &:active,
                         &:focus,
@@ -185,6 +185,7 @@
         color: $brand-primary;
         width: 280px;
         font-family: 'Kalam', cursive;
+        margin-top: 15px;
 
         img {
             width: 92px;
@@ -212,11 +213,11 @@
       }
     }
 
-    .download-sbt {
+    .download-vscode {
       padding-left: 10px;
     }
 
-    .download-sbt {
+    .download-vscode {
         .description {
             top: 60px;
             left: auto;
