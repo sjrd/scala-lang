@@ -9,7 +9,7 @@ Installing Scala has always been a task more challenging than necessary, with th
 Should I install Scala itself? sbt? Some other build tools? What about a better REPL like Ammonite? Oh and before all that I need to install Java?
 
 To solve this problem, the Scala Center contracted Alexandre Archambault in January 2020 to add a one-click install of Scala to [coursier](https://get-coursier.io/docs/cli-overview).
-Starting today, [the main Scala download page](/download/) gives one-liner command lines incantations (and a one-click executable for Windows) to fully install Scala and all the main related tools.
+
 For example, on Linux, all we now need is:
 
 ```bash

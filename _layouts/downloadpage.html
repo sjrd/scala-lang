@@ -16,24 +16,23 @@ layout: inner-page-parent
         </ul>
       </div>
       <div class="main-download">
-        <h2>The easiest way to install Scala is through coursier.</h2>
+        <h2>The most popular way to get Scala is either using Scala through sbt, the Scala build tool, or to use Scala through an IDE.</h2>
         <div class="install-steps">
           <div class="step">
             <img src="/resources/img/download/arrow-asset.png" alt="">
             <div class="number-step">1</div>
             <div class="text-step">
-              <h3>First, install Java, Scala, and all related command-line tools.</h3>
-              <div id="download-step-one">
-              <p>Download <a href="https://get-coursier.io/docs/cli-overview.html#install-native-launcher">the native launcher of coursier</a> then install everything with:</p>
-              <p><code>$ ./cs setup</code><span> (Adapt to your operating system)</span></p>
-              </div>
-              <p>(See <a href="https://get-coursier.io/docs/cli-overview.html#install-native-launcher">the instructions for other operating systems</a>.)
+              <h3>First, make sure you have the Java 8 JDK (or Java 11 JDK) installed.</h3>
+              <p>To check, open the terminal and type:</p>
+              <p><code>java -version</code><span>(Make sure you have version 1.8 or 11.)</span></p>
+              <p><i>(If you don't have it installed, download Java from <a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html">Oracle Java 8</a>, <a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html">Oracle Java 11</a>, or <a href="https://adoptopenjdk.net/">AdoptOpenJDK 8/11</a>. Refer <a href="https://docs.scala-lang.org/overviews/jdk-compatibility/overview.html">JDK Compatibility</a> for Scala/Java compatiblity detail.</i></p>
             </div>
           </div>
           <div class="step">
             <div class="number-step">2</div>
             <div class="text-step">
-              <h3>Then, install an IDE, or get started with sbt</h3>
+              <h3>Then, install Scala:</h3>
+              <p>...either by installing an IDE such as IntelliJ, or sbt, Scala's build tool.</p>
             </div>
           </div>
           <div class="download-options">
@@ -116,17 +115,22 @@ layout: inner-page-parent
     -->
 
   <div style="display:none" id="stepOne-linux">
-    <p><code>$ curl -Lo cs https://git.io/coursier-cli-linux && chmod +x cs && ./cs setup</code></p>
+    <p><code>java -version</code><span>(Make sure you have version 1.8.)</span></p>
   </div>
   <div style="display:none" id="stepOne-unix">
-    <p>Follow <a href="https://get-coursier.io/docs/cli-overview.html#install-native-launcher" target="_blank">the instructions to install the <code>cs</code> launcher</a> then run:</p>
-    <p><code>$ ./cs setup</code></p>
+    <p><code>java -version</code><span>(Make sure you have version 1.8.)</span></p>
   </div>
   <div style="display:none" id="stepOne-macos">
-    <p><code>$ curl -Lo cs https://git.io/coursier-cli-macos && chmod +x cs && (xattr -d com.apple.quarantine cs || true) && ./cs setup</code></p>
-    <p><span>Alternatively you can use Homebrew: </span><code>$ brew install coursier/formulas/coursier && cs setup</code></p>
+    <p><code>java -version</code><span>(Make sure you have version 1.8.)</span></p>
   </div>
   <div style="display:none" id="stepOne-windows">
-    <p>Download and execute <a href="https://git.io/coursier-cli-windows-exe">the Scala installer for Windows</a> based on coursier</p>
+    <p>
+      <ul>
+        <li>Launch the Windows Start menu</li>
+        <li>Click on <code>Programs</code></li>
+        <li>Find the <code>Java</code> program listing</li>
+        <li>Click <code>About Java</code> to see the Java version</li>
+      </ul>
+    </p>
   </div>
 </section>
