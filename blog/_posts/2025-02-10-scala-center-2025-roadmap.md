@@ -67,6 +67,8 @@ In addition to those ongoing projects, our Scala Center team plans to work on th
   This year, we will explore further optimizations, and add support for standalone Wasm (without a JavaScript engine), in collaboration with VirtusLab.
   This will push the frontier of where Scala is applicable, allowing to use it in sandboxed environments, as increasingly found in cloud-computing offerings.
   If time permits, we would like to explore what unique features Wasm has to offer to the Scala language, such as generalized tail calls or continuations.
+- **Stretch goal: Security audit of the standard library.**
+  If sufficient funding is secured, we aim to collaborate with security experts to conduct a thorough audit of the Scala standard library. This effort would focus on identifying potential vulnerabilities, and applying necessary patches.
 
 ### Documentation
 
@@ -82,24 +84,31 @@ In addition to maintaining the Scala website and managing our online course lear
 - **Reshape the index of documentation, guides and overviews.**
   The documentation index page, as well as the index of guides and overviews, have grown organically over the years.
   Resources permitting, we intend to restructure them, so that it is easier to find the information one is looking for.
+- **Stretch goal: Expand toolkit tutorials.**
+  If resources allow, we plan to develop more hands-on tutorials that guide users through practical scenarios. These will include topics such as building command-line applications, interacting with SQL databases, and developing web user interfaces.
 
 ### Developer Experience
 
 In addition to maintaining some of the core tools of the ecosystem (sbt, tasty-query, scaladex), we will:
 
-- **Conclude the development of sbt 2.**
+- **Stretch goal: Conclude the development of sbt 2.**
   During 2024, we helped stabilizing sbt 2, which is based on Scala 3.
   It is currently available as a milestone release.
   We also brought significant performance improvements.
   We hope to conclude that effort this year, with the following key tasks: implement non-blocking `run` and `test`, fixing the remaining major bugs, migrate key sbt plugins, and provide documentation.
+- **Stretch goal: Integrate Scala CLI into Scastie.**
+  In 2024, we began integrating Scala CLI into Scastie to enable support for using directives in Scala code snippets. This year, we aim to complete the integration.
+- **Stretch goal: Unify artifact publishing.**
+  Currently, publishing workflows are implemented independently across various build tools, such as sbt, Scala CLI, and Mill. If resources allow, we aim to develop a common library to streamline and unify artifact publishing across these tools.
 
 We will dedicate some of our time to supporting key stakeholders in the tooling ecosystem, including:
 
-- VirtusLab, on releasing the new Scala command.
 - JetBrains, on improving the support of Scala 3 in IntelliJ.
-- VirtusLab and Lightbend, on improving the coverage support in Scala 3.
+- VirtusLab and Akka, on improving the coverage support in Scala 3.
+- VirtusLab, on improving Scaladoc.
 
 Finally, we acknowledge that many more projects would deserve our attention but we do not have the capacity to support them.
+Notably, but not exclusively, this includes Coursier, Scalafix, and Scaladex.
 
 ### Community and Contributor Experience
 
